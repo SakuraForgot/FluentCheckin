@@ -95,6 +95,16 @@ def main():
         "PySide2",
         str(ROOT / "main.py"),
     ]
+    # Ship the project notices and dependency license files with the executable.
+    for document in ("LICENSE", "THIRD_PARTY_NOTICES.md", "README.md"):
+        command.extend(["--add-data", str(ROOT / document) + ":."])
+    for distribution in (
+        "PySide6",
+        "PySide6-Fluent-Widgets",
+        "playwright",
+        "filelock",
+    ):
+        command.extend(["--recursive-copy-metadata", distribution])
     environment = os.environ.copy()
     system_root = Path(environment.get("SYSTEMROOT", "C:/Windows"))
     # External tools (e.g. Poppler) may put incompatible ICU/Qt DLLs on PATH.

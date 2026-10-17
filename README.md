@@ -86,6 +86,8 @@ dist/onedir/FluentCheckin.zip.sha256
 
 包包含 Python、Qt 和 Playwright 驱动，不要求接收方安装 Python；不收集项目根目录、账号会话、测试数据和旧参考源码。[Playwright 打包说明](https://playwright.dev/python/docs/library#pyinstaller) / [PyInstaller 文档](https://pyinstaller.org/en/stable/usage.html)。
 
+打包时同时收录项目许可、使用说明，以及运行依赖的元数据和许可文件。
+
 ## 本地数据
 
 默认采用便携结构：EXE 首次运行时在自身旁创建 `data/`；源码运行时在 `main.py` 旁创建。不会因为工作目录或单文件版的临时解压位置而改变保存位置，也不再使用 AppData 保存应用数据。
