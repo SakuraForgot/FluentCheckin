@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <title>Fluent Check-in</title>
+  <desc>A pair of account cards with a white check mark on a teal badge.</desc>
+  <defs>
+    <linearGradient id="tile" x1="40" y1="24" x2="224" y2="238" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#41DBCB"/>
+      <stop offset=".48" stop-color="#00AAB7"/>
+      <stop offset="1" stop-color="#08689B"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="64" y1="57" x2="187" y2="208" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DFF5F7"/>
+    </linearGradient>
+    <linearGradient id="badge" x1="138" y1="137" x2="205" y2="217" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#17CAB1"/>
+      <stop offset="1" stop-color="#007C94"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="12" width="232" height="232" rx="58" fill="url(#tile)"/>
+  <rect x="13" y="13" width="230" height="230" rx="57" stroke="#FFFFFF" stroke-opacity=".26" stroke-width="2"/>
+  <path d="M32 83C32 55 54 32 83 32H156" stroke="#B5FFF1" stroke-opacity=".27" stroke-width="4" stroke-linecap="round"/>
+  <rect x="65" y="47" width="132" height="159" rx="25" transform="rotate(10 131 126.5)" fill="#BEFFF5" fill-opacity=".48"/>
+  <rect x="53" y="57" width="139" height="157" rx="26" fill="#054F72" fill-opacity=".18"/>
+  <rect x="53" y="49" width="139" height="157" rx="26" fill="url(#paper)"/>
+  <rect x="54" y="50" width="137" height="155" rx="25" stroke="#FFFFFF" stroke-opacity=".75" stroke-width="2"/>
+  <circle cx="87" cy="85" r="11" fill="#00A3AC"/>
+  <path d="M70 110C70 101 77.6 96 87 96C96.4 96 104 101 104 110" fill="#00A3AC"/>
+  <path d="M120 83H164" stroke="#6FADB7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M120 102H148" stroke="#ADCFD5" stroke-width="7" stroke-linecap="round"/>
+  <path d="M76 129H166" stroke="#C6E4E8" stroke-width="3" stroke-linecap="round"/>
+  <path d="M77 150H110M77 169H101" stroke="#8FBFC9" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="171" cy="180" r="47" fill="#055E79" fill-opacity=".16"/>
+  <circle cx="171" cy="174" r="47" fill="url(#badge)"/>
+  <circle cx="171" cy="174" r="46" stroke="#93F5DE" stroke-opacity=".55" stroke-width="2"/>
+  <path d="M147 173L164 190L196 158" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
