@@ -20,9 +20,11 @@ class PortableTests(unittest.TestCase):
             ),
             patch("checkin.vault.sys._MEIPASS", "some-extraction-folder", create=True),
         ):
-            self.assertEqual(default_root(), Path(root) / "data")
+            # Windows runners may expose TEMP using an 8.3 short path.
+            expected_root = Path(root).resolve() / "data"
+            self.assertEqual(default_root(), expected_root)
             store = Store()
-            self.assertEqual(store.root, Path(root) / "data")
+            self.assertEqual(store.root, expected_root)
             self.assertEqual(store.accounts(), [])
             self.assertTrue((store.root / "app.sqlite3").is_file())
 
